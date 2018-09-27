@@ -1,6 +1,6 @@
 <template>
   <div>
-  <Stock v-for="stock in stocks"></Stock>
+  <Stock v-for="stock in stocks" :stock="stock"></Stock>
   </div>
 </template>
 
@@ -11,9 +11,9 @@ export default {
     return{
       stocks:[
       {id:1,name:"BMW", price:110},
-      {id:1,name:"Google", price:1110},
-      {id:1,name:"Apple", price:2210},
-      {id:1,name:"Tesla", price:10}
+      {id:2,name:"Google", price:1110},
+      {id:3,name:"Apple", price:2210},
+      {id:4,name:"Tesla", price:10}
       ]
     }
   },
